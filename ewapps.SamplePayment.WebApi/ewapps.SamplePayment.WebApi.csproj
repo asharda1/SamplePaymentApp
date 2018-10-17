@@ -9,11 +9,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="IdentityModel" Version="3.10.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0-preview1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="2.2.0-preview2-35157" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization.Policy" Version="2.2.0-preview2-35157" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0-preview2-35157" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.0-preview2-35157" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0-preview2-35157" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0-preview2-35157" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ewApps.SamplePayment.DTO\ewApps.SamplePayment.DTO.csproj" />
+    <ProjectReference Include="..\ewApps.SampleProject.DataService\ewApps.SamplePayment.DataService.csproj" />
+    <ProjectReference Include="..\ewApps.SampleProject.Data\ewApps.SamplePayment.Data.csproj" />
   </ItemGroup>
 
 </Project>
